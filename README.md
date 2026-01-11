@@ -71,8 +71,8 @@ Plik pomocniczy do wizualizacji danych.
 Plik z dekoratorami pomocniczymi.
 
 - zawiera dekorator `timer`,
-- umożliwia pomiar czasu wykonania funkcji,
-- używany do debugowania i optymalizacji.
+- który umożliwia pomiar czasu wykonania funkcji,
+- stosowany do metody fetch w klasie ITunesSource, umożliwiając monitorowanie czasu pobierania danych z API i wspierając debugowanie oraz optymalizację.
 
 ---
 

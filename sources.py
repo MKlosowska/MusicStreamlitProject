@@ -1,4 +1,5 @@
 import requests
+from decorators import timer
 
 class Track:
     def __init__(self, track, artist, album=None, genre=None, release_date=None, duration_ms=None):
@@ -10,6 +11,7 @@ class Track:
         self.duration_ms = duration_ms
 
 class ITunesSource:
+    @timer
     def fetch(self, query, country="PL", limit=100, attribute=None):
         url = "https://itunes.apple.com/search"
         params = {"term": query, "entity": "song", "country": country, "limit": int(limit)}
